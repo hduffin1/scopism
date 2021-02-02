@@ -1,0 +1,255 @@
+header {
+    top: 0px;
+    z-index: 1000;
+    width: 100%;
+    transition: top 0.2s ease-in-out;
+    height: 100px;
+
+    .upper-header {
+      margin-bottom: 15px;
+
+      .nav-logo {
+        margin-top: 15px;
+        height: 40px;
+
+      }
+    }
+
+    .lower-header {
+      background-color: $blue;
+
+    }
+
+    .nav-logo {
+        height: 130px;
+        z-index: -1;
+    }
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-style: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Comfortaa', cursive;
+
+    li {
+        padding: 7px 15px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $white;
+
+        &:hover {
+          transition: 0.4s;
+      }
+    }
+}
+
+/* Style the menu link */
+.js .nav .skip {
+  color: #fff;
+  position: absolute;
+  right: 1px;
+  top: 30px;
+  overflow: hidden;
+  width: 50px;
+      &:hover {
+          transition: .4s;
+      }
+
+      img {
+        height: 20px;
+      }
+  } 
+
+
+/* Hide and position the closed .nav ul */
+.js .nav ul {
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 1em;
+  top: 50px;
+  transition: max-height 1s ease-out;
+}
+
+/* Style the list items to appear under the menu link */
+.js nav li {
+  padding: 10px 7px;
+  margin: 0;
+}
+
+/* Style the list item links for ease of touch on small screens */
+.js nav li a {
+  padding: 5px 6px;
+  display: block;
+}
+
+.js nav li span {
+  display: block;
+}
+
+/* Give the .nav ul a height when it's been opened, i.e. make it show */
+.js .nav ul.open {
+max-height: 70em;
+}
+
+/* On screens larger than 1200px, remove the menu link and display all menu items */
+@media screen and (min-width: 901px) {
+  .js .nav ul {
+    width: 100%;
+    overflow: auto;
+    max-height: inherit; 
+    position: static;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 5px;
+  }
+  .js .nav li {
+    text-align: left;
+    display: inline-block;
+    border-top: 0;
+  }
+  .js .nav li:last-child {
+    border: 0;
+  }
+  .js .nav .skip {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  header {
+    height: 80px;
+
+    .upper-header {
+      .nav-logo {
+        margin-top: 15px;
+        height: 35px;
+      }
+      .upper-header-content {
+        margin-top: 10px;
+      }
+    }
+
+    .nav-logo {
+      height: 60px;
+    }
+  }
+
+  .js .nav ul {
+    right: 0px;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .js nav li {
+      text-align: right;
+      margin-top: 0;
+      background-color: $white;
+      border-bottom: 1px solid $blue;
+  }
+
+  .js nav li a {
+      padding: 10px 10px;
+      display: block;
+      color: $blue;
+
+      &:hover {
+        color: $orange;
+      }
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) 
+and (max-width: 768px) {
+  header {
+    height: 80px;
+
+    .upper-header {
+      .nav-logo {
+        margin-top: 15px;
+        height: 25px;
+      }
+      .upper-header-content {
+        flex-basis: 100%;
+        margin-top: 10px;
+      }
+    }
+
+    .nav-logo {
+      height: 60px;
+    }
+  }
+
+  .js .nav ul {
+    right: 0px;
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .js nav li {
+      text-align: right;
+      margin-top: 0;
+  }
+
+  .js nav li a {
+      padding: 10px 10px;
+      display: block;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 768px) 
+and (max-width: 900px) {
+  header {
+    height: 80px;
+
+    .upper-header {
+      .nav-logo {
+        margin-top: 15px;
+        height: 25px;
+      }
+      .upper-header-content {
+        flex-basis: 100%;
+        margin-top: 10px;
+      }
+    }
+
+    .nav-logo {
+      height: 60px;
+    }
+  }
+
+  .js .nav ul {
+    right: 0px;
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .js nav li {
+      text-align: right;
+      margin-top: 0;
+  }
+
+  .js nav li a {
+      padding: 10px 10px;
+      display: block;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,35 @@
+button.accordion {
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+    height: auto;
+    transition: .2s;
+    font-family: 'Avenir-Medium';
+    font-size: 18px;
+    color: $blue;
+    background-color: $white;
+    padding: 0;
+    margin-top: 10px;
+
+    &:after {
+        content: '\002B';
+    }
+}
+
+button.accordion.active, button.accordion:hover {
+    color: $blue;
+}
+
+button.accordion:after {
+    margin-left: 10px;
+}
+
+button.accordion-blue.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    transition: max-height .5s ease-out;
+    max-height: 0;
+    overflow: hidden;
+}

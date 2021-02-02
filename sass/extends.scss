@@ -1,0 +1,96 @@
+%orange-btn {
+    background-color: $orange;
+    padding: 10px 20px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: $blue;
+        transition: .4s;
+    }
+}
+
+button.accordion {
+    border: 1px solid $orange;
+    background: #fff;
+    cursor: pointer;
+    padding: 45px;
+    width: 100%;
+    transition: 0.4s;
+    height: auto;
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+
+    &:hover {
+        border: 1px solid $blue;
+    }
+}
+
+button.accordion-read {
+    background: $blue;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.4s;
+    height: auto;
+    border: none;
+    padding: 5px;
+    margin-top: 10px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 300; 
+    color: $white;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+div.panel {
+    margin-top: -20px;
+    padding: 0 25px;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid $orange;
+}
+
+div.panel-read {
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: $white;
+    font-weight: bold;
+    float: right;
+    margin-right: 10px;
+}
+
+button.accordion-read:after {
+    content: '\002B';
+    color: $white;
+    font-weight: bold;
+    float: right;
+    margin-right: 10px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+button.accordion-read.active:after {
+    content: "\2212";
+}

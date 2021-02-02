@@ -1,0 +1,110 @@
+.content-wrapper {
+    margin-top: 25px;
+
+    .homepage-details-wrapper {
+        background-color: $orange;
+        width: 60%;
+
+        .details {
+            padding: 20px;
+        }
+        h3,h2 {
+            color: $white;
+        }
+    }
+
+    .blue {
+        padding-top: 10px;
+        background-color: $blue;
+    }
+
+    .grey {
+        background-color: $grey;
+    }
+
+    .homepage-content {
+        padding: 30px 0;
+        margin-top: 40px;
+    }
+
+    .pricing-wrapper {
+        margin-top: 80px;
+
+        .pricing {
+            margin-top: 30px;
+            width: 100%;
+        }
+        .price-icon {
+            height: 50px;
+        }
+
+        .pricing-content {
+            margin-left: 20px;
+
+            .pricing-btn {
+                @extend %orange-btn;
+            }
+        }
+    }
+
+    .homepage-btn-container {
+        .homepage-btn {
+            @extend %orange-btn;
+        }
+
+        .homepage-btn-reg {
+            @extend %orange-btn;
+            margin-left: 30px;
+        }
+    }
+
+    .whitepaper {
+        padding-top: 50px;
+        padding-bottom: 30px;
+
+        .whitepaper-content {
+            margin-left: 30px;
+        }
+    }
+}
+
+.sponsors-wrapper {
+    padding: 30px 0;
+
+    h3 {
+        text-align: center;
+        margin: 20px 0;
+        color: $blue;
+    } 
+
+    img {
+        height: 70px;
+    }    
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .content-wrapper {
+        .homepage-details-wrapper {
+            width: 100%;
+            padding: 0;
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) 
+and (max-width: 768px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+and (max-width: 991px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 992px)
+and (max-width: 1200px) {
+}
